@@ -234,6 +234,10 @@ div.texto {
 }
 q {
     background: var(--cor1);
+    color: black;
+}
+cite > a {
+    text-decoration: none;
 }
 #img-2 {
     display: flex;
