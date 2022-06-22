@@ -54,7 +54,7 @@ header a:hover {
     text-decoration: none;
 }
 main#main{
-    background-image: url(img/wallpaper005.jpg);
+    background-image: url(../img/wallpaper005.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -313,7 +313,7 @@ footer img:hover {
 /* Aqui começa a página downloads */
 
 .body {
-    background-image: url(img/wallpaper005.jpg);
+    background-image: url(../img/wallpaper005.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
