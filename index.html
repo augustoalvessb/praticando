@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Prática</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/homex.png" alt="Página home"></a>
+        <nav>
+            <a href="downloads.html">Downloads</a>
+            <a href="videos.html">Mídias</a>
+        </nav>
+    </header>
+    <main id="main">
+        <h1>Colocando todo aprendizado em Prática &reg;</h1>
+        <section>
+            <h2>Símbolos & Emojis</h2>
+            <p>&rArr; Usando <em><abbr title="Títulos usados em códigos">HTML ENTITIES</abbr></em> &rarr; Abaixo listarei alguns símbolos e emojis com seus respectivos códigos:</p>
+                <ul id="emoji">
+                    <li>&copy; &#8208; <abbr title="&amp;copy;"> Copy Right</abbr></li>
+                    <li>&euro; &#8208; <abbr title="&amp;euro;"> Euro </abbr></li>
+                    <li>&dagger; &#8208; <abbr title="&amp;dagger;">Cruz</abbr></li>
+                    <li>&Omega;  &#8208; <abbr title="&amp;Omega;">Omega</abbr></li>
+                    <li>&#x1F30A; &#8208; <abbr title="&amp;#x1F308;">Onda</abbr></li>
+                    <li>&#x1F347; &#8208; <abbr title="&amp;#x1F347;">Uvas</abbr></li>
+                    <li>&#x1F3BB; &#8208; <abbr title="&amp;#x1F3BB;">Violino</abbr></li>
+                    <li>&#x1F40B; &#8208; <abbr title="&amp;#x1F40B;">Baleia</abbr></li>
+                </ul>
+        </section>
+        
+        <h2 id="aside">Formatações de texto</h2>
+        <aside id="artigos">    
+            <article>
+                <h3>Marca texto</h3>
+                <p>Marcações de texto com o exemplo a seguir:  <abbr title="&lt;mark&gt;"><mark>animi reprehenderit fugit voluptatibus</mark></abbr>.</p>
+            </article>
+            <article>
+                <h3>Texto Desconsiderado</h3>
+                <p>Quando o texto deve ser lido, porém descondiderado: <abbr title="&lt;del&gt;"><del>asperiores dolores quo in commodi, corrupti aspernatur velit!</del></abbr></p>
+            </article>
+            <article>
+                <h3>Texto Inserido</h3>
+                <p>Quando o pedaço do texto deve ser lido com atenção: <abbr title="&lt;ins&gt;"><ins>Commodi minus eos doloribus, quibusdam voluptatum suscipit</ins></abbr></p>
+            </article>
+            <article>
+                <h3>Texto pequeno</h3>
+                <p>Usado para pequenas linhas de contratos: <abbr title="&lt;small&gt;"><small>Foasj lkizokoas zeknis nit soltium. Facere quod possimus </small></abbr> </p>
+            </article>
+            <article>
+                <h3>Texto Subscrito</h3>
+                <p>Usado para escrever palavras como no exemplo abaixo:  <abbr title="&lt;sub&gt;">H<sub>2</sub>O</abbr> <br> <abbr title="&lt;sub&gt;">CO<sub>2</sub></abbr>.</p> 
+            </article>
+            <article>
+                <h3>Texto Sobrescrito</h3>
+                <p>Números como esses, 2<abbr title="&lt;sup&gt;"><sup>nd</sup></abbr> e também  25<abbr title="&lt;sup&gt;"><sup>12</sup></abbr></p>
+            </article>
+        </aside>
+        <div id="codigos">
+            <div id="titulos">
+                <h3 class="titulo-codigo">Trechos de Códigos</h3>
+                    <h4 class="titulo-codigo">Python 3</h4>
+                    <h5 class="titulo-codigo">Utilizando a biblioteca Math</h5>
+            </div>
+                <ul id="slider">
+                    <li>
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <label for="slide1"></label>
+                        <pre><code>
+                            r = float(input('Quanto de dinheiro vôce tem na carteira? R$'))
+                            d = r / 5.55
+                            e = r / 6.70
+                            y = r / 0.052
+                            print('Com R${:.2f} você pode comprar U${:.2f}, '.format(r, d), end='')
+                            print('U€{:.2f}, '.format(e), end='')
+                            print('e U¥{:.2f}.'.format(y))
+                        </code></pre>
+                    </li>
+                
+                    <li>
+                        <input type="radio" name="slide" id="slide2">
+                        <label for="slide2"></label>
+                        <pre><code>
+                            import math
+                            an = float(input('Digite o ângulo desejado: '))
+                            sen = math.sin(math.radians(an))
+                            cos = math.cos(math.radians(an))
+                            tg = math.tan(math.radians(an))
+                            print('O angulo de {} tem o SENO de {:.2f}'.format(an, sen))
+                            print('O angulo de {} tem o COSSENO de {:.2f}'.format(an, cos))
+                            print('O angulo de {} tem a TANGENTE de {:.2f}'.format(an, tg))
+                        </code></pre>
+                    </li>
+                
+                    <li>
+                        <input type="radio" name="slide" id="slide3">
+                        <label for="slide3"></label>
+                        <pre><code>
+                            from math import radians, sin, cos, tan
+                            an = float(input('Digite o valor do ângulo: '))
+                            sen = sin(radians(an))
+                            print('O angulo de {} tem seno{:.2f}'.format(an, sen))
+                            cos = cos(radians(an))
+                            print('O angulo de {} tem o cosseno {:.2f}'.format(an , cos))
+                            tg = tan(radians(an))
+                            print('O angulo de {} tem a tangente{:.2f}'.format(an, tg))
+                        </code></pre>
+                    </li>
+                </ul>    
+        </div>
+        <h2 class="sub-titulo">Citações</h2>
+        <h3 id="sub-titulo">Citações de grandes Filósofos brasileiros</h3>
+        <div id="img">
+                <div class="texto">
+                    <h4>Mario Sérgio Cortela</h4>
+                    <p>Para inserir falas em meio de textos <br><abbr title="&lt;q&gt;"><q>Um erro deve ser corrigido, e não punido</q></abbr></p>
+                </div>
+            <img src="img/mario-sergio-s.png" alt="Mario Sergio Cortella">
+        </div>
+        <div id="img-2">
+            <img src="img/clovis-de-barros-s.jpg" alt="Clovis de Barros Filho">
+            <div class="texto-2">
+                <h4>Clóvis de Barros Filho</h4>
+                <p>Aqui usei as <abbr title="&lt;cite&gt; &lt;blockquote&gt; &lt;q&gt; &lt;a&gt;">TAGS</abbr></p>
+                <cite> <a href="https://www.pensador.com/autor/clovis_de_barros_filho/" target="_blank" rel="external">
+                    <blockquote><q>Porque para tirar da mente - ou da alma - o que nos entristece, vale tudo. Vale recordar de coisas que excluam a existência das entristecedoras. O amor não se ganha só com um Eu Te Amo, e sim com atitudes, respeito e carinho.</q></blockquote>
+                </a></cite>
+            </div>
+        </div>
+        <div id="final">
+            <h2 class="titulo-final">Texto Invertido</h2>
+            <p class="texto-final">Não é tão útil, mas saiba que é possivel fazer isso. <br>
+            <bdo dir="rtl">Não é tão útil, mas saiba que é possivel fazer isso.</bdo></p>
+        </div>
+        <h2 class="titulo-final">Listas de Definições</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação utilizada para criar conteúdo de sites</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a especificação de esilos em sites</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para criar interatividades em sites</dd>
+            <dt>Python</dt>
+            <dd>Linguagem de programação usada para criar a parte de backend em sites</dd>
+        </dl>
+    </main>
+    <footer>
+        <p>Redes sociais</p>
+        <a href="https://github.com/augustoalvessb" target="_blank" rel="external"><img src="img/github.png" alt="github"></a>
+        <a href="https://www.instagram.com/augustoalvessb/" target="_blank" rel="external"><img src="img/icone-instagram.png" alt="instagram"></a>
+        <a href="https://www.facebook.com/augusto.henrique.522" target="_blank" rel="external"><img src="img/icone-facebook.png" alt="facebook"></a>
+    </footer>
+</body>
+</html>

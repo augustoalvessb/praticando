@@ -1,0 +1,414 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+:root {
+    --cor1: #418994;
+    --cor2: #FA50A2;
+    --cor3: #37E0FA;
+    --cor4: #FAE21E;
+    --cor5: #AD9E1D;
+
+    --font-título: 'Kdam Thmor Pro', Helvetica, sans-serif;
+    --font-body: 'Poppins', Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font-body);
+    background-color: #41899431;
+}
+header {
+    height: 25px;
+    background-color: var(--cor1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 1px 12px 1px; 
+}
+header img {
+    flex-basis: 50px;
+    align-items: center;
+    height: 35px;
+    padding: 0px 5px 0px 5px;
+    margin: -10px;
+    border: none;  
+}
+header nav {
+    display: flex;
+    padding-right: 0px;
+    text-decoration: none;
+}
+header a {
+    padding: 9.5px 20px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.274);
+    font-family: var(--font-título);
+    font-size: 19px;
+    transition-duration: 0.5s;
+}
+header a:hover {
+    background-color: #32676f;
+    text-decoration: none;
+}
+main#main{
+    background-image: url(img/wallpaper005.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+main h1 {
+    font-family: var(--font-título);
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.289);
+}
+section {
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    font-size: 19px;
+    line-height: 2em;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.326);
+}
+section > h2 {
+    color: white;
+    background-color: var(--cor4);
+    padding: 7px;
+    margin: -10px -10px 5px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.136);
+    text-align: center;
+}
+section > p > em {
+    font-weight: 700;
+    color: rgb(227, 241, 254);
+}
+section li:hover {
+    color: black;
+}
+#emoji {
+    list-style-type: '\025B9\00A0';
+    list-style-position: inside;
+    font-size: 20px;
+    columns: 2;
+}
+#aside {
+    font-family: var(--font-título);
+    text-align: center;
+    font-size: 1.8em;
+    margin: 40px;
+} 
+#artigos {
+    display: flex;
+}
+article h3 {
+    background-color: var(--cor3);
+    padding: 5px;
+    margin: -7px -7px 5px -7px;
+    border-radius: 50px 50px 0px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+article {
+    text-indent: 10px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+    border: 5px solid var(--cor3);
+    border-radius: 50px;
+}
+article mark {
+    background-color: #37E0FA;
+}
+article abbr {
+    font-weight: 600;
+}
+#codigos {
+    margin: 50px auto;
+    height: 270px;
+    max-width: 750px;
+    border: 5px solid var(--cor2);
+    border-radius: 50px;
+}
+.titulo-codigo {
+    text-align: center;
+}
+#titulos {
+    background-color: var(--cor2);
+    margin: -3px;
+    border-radius: 50px 50px 0px 0px;
+}
+#slider {
+    display: block;
+    height: 270px;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+#slider li {
+    list-style: none;
+    position: absolute;
+}
+#slider pre {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    vertical-align: top;
+}
+#slider input {
+    display: none;
+}
+#slider label {
+    background-color: black;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    z-index: 10;
+    border-radius: 50%;
+}
+#slider label:hover {
+    background-color: var(--cor2);
+}
+#slider li:nth-child(1) label {
+    top: 24px;
+    left: 75px;
+}
+#slider li:nth-child(2) label {
+    top: 60px;
+    left: 75px;
+}
+#slider li:nth-child(3) label {
+    top: 96px;
+    left: 75px;
+}
+#slider li input:checked ~ pre {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+.sub-titulo {
+    font: 700 1.7em var(--font-título);
+    text-align: center;
+    border-top: 2px solid var(--cor1);
+    border-bottom: 2px solid var(--cor1);
+    padding: 50px;
+    margin: 80px 80px 30px 80px;
+}
+#sub-titulo {
+    font: 700 1.7em var(--font-título);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+#img {
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+    padding: 50px 200px;
+    margin: 30px ;
+}
+#img img {
+    border-radius: 10px;
+    box-shadow: -2px 5px 7px 0px rgba(0, 0, 0, 0.263);
+}
+div.texto {
+    max-width: 500px;
+    max-height: 200px;
+    text-align: justify;
+    line-height: 2em;
+    margin-top: 60px;
+}
+q {
+    background: var(--cor1);
+}
+#img-2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+    padding: 50px 200px;
+    margin: 30px;
+}
+div.texto-2 {
+    max-width: 500px;
+    max-height: 200px;
+    text-align: justify;
+    line-height: 2em;
+    margin-top: 60px;
+}
+#img-2 img {
+    box-shadow: -2px 5px 7px 0px rgba(0, 0, 0, 0.263);
+    border-radius: 10px;
+}
+.titulo-final {
+    font-family: var(--font-título);
+    text-align: center;
+    padding-top: 20px;
+    margin: 30px;
+} 
+.texto-final {
+    text-align: center;
+    padding-bottom: 40px;
+    margin: auto;
+}
+#final {
+    width: 500px;
+    margin: 80px auto;
+    border: 3px solid var(--cor1);
+    outline-width: 3px ;
+    outline-style: solid;
+    outline-color: var(--cor3);  
+}
+dl {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 0px black;
+    background-image: radial-gradient(var(--cor1) 30%, var(--cor5));
+    font-size: 1.1em; 
+}
+dt {
+    background-image: linear-gradient(to bottom, var(--cor1), transparent);
+    border-radius: 20px;
+}
+dd {
+    background-image: linear-gradient(to top, var(--cor5), transparent);
+    border-radius: 20px;
+}
+footer {
+    background-color: var(--cor1);
+    font-family: var(--font-título);
+    padding-top: 10px;
+    font-size: 1.3em;
+    display: block;
+    text-align: center;
+}
+footer img {
+    border-radius: 50px;
+    margin: 5px 50px; 
+    width: 35px;
+}
+footer img:hover {
+    background-color: white;
+}
+
+/* Aqui começa a página downloads */
+
+.body {
+    background-image: url(img/wallpaper005.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main {
+    background-color: #41899469;
+    max-width: 1200px;
+    margin: auto;
+}
+.primeiro-titulo {
+    width: 400px;
+    margin: auto;
+    border-bottom: 2px solid var(--cor1);
+}
+.titulo-downloads {
+    text-indent: 20px;
+    margin-top: 30px;
+}
+#cursos-concluidos {
+    padding: 30px;
+    font-size: 18px;
+}
+#cursos-concluidos a {
+    color: var(--cor2);
+    font-weight: bold;
+    text-decoration: none;
+}
+#cursos-concluidos a:hover {
+    color: var(--cor3);
+}
+.cursos-concluidos {
+    padding-left: 30px;
+}
+button {
+    display: block;
+    outline: 3px solid var(--cor1);
+    border: none;
+    background-color: var(--cor3);
+    margin-top: 20px;
+    box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.455);
+}
+.button a {
+    font-weight: bold;
+    color: var(--cor2);
+    text-decoration: none;
+}
+.button a:hover {
+    color: var(--cor3);
+}
+.button li {
+    list-style-type: '\1F4E5\00A0\0020';
+    font-size: 20px;
+    padding: 10px;
+}
+.button li:hover {
+    background-color: var(--cor2);
+}
+.button li:active {
+    color: var(--cor1);
+    background-image: linear-gradient(180deg, var(--cor2) 30%, var(--cor3) 80%);
+}
+#ultimo-aside {
+    padding-bottom: 25px;
+}
+/* Aqui começa a parte de vídeos */
+
+.titulo-video {
+    font-family: var(--font-título);
+    text-align: center;
+    margin: 30px;
+}
+#video {
+    background-color: var(--cor1);
+    padding-bottom: 56.2%;
+    position: relative;
+}
+#video > video {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+.videos {
+    background-color: var(--cor1);
+    padding-bottom: 56.2%;
+    position: relative;
+}
+.videos > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+#audio {
+    text-align: center;
+}
+#picture {
+    text-align: center;
+    padding-bottom: 20px;
+}
