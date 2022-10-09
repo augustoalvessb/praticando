@@ -1,2 +1,2 @@
-# sites-praticos
-Aqui fiz meu primeiro site sozinho, usando todo conhecimento adiquirido até o momento em prática.
+# Projetos na Prática
+Aqui fiz meu primeiro site sozinho, colocando todo conhecimento adiquirido em HTML e CSS até o momento em prática.
